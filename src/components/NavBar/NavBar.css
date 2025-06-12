@@ -1,0 +1,13 @@
+* {
+    max-width: 1280;
+}
+
+.navbar-container {
+    padding-top: 0;
+}
+
+.navbar-brand {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+

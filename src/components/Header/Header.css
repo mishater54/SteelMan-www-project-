@@ -1,0 +1,183 @@
+.header-container {
+  position: relative;
+  height: 100vh;
+  max-height: 640px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  background-image: url('./src/assets/upper-photo\ 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-content {
+  position: relative;
+  z-index: 20;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content-wrapper {
+  max-width: 48rem;
+}
+
+.registration-badge {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.badge-text {
+  display: block;
+}
+
+.event-date {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.main-title {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  line-height: 1;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 6rem;
+  }
+}
+
+.event-location {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  /* display: flex; */
+  align-items: center;
+  opacity: 0.9;
+}
+
+.register-button {
+  background-color: #dc2626;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transform: skewX(-12deg);
+  transition: all 0.3s ease;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 2px solid #ef4444;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #b91c1c;
+  border-color: #f87171;
+  transform: skewX(-12deg) scale(1.05);
+}
+
+.button-text {
+  transform: skewX(12deg);
+  display: block;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  background-color: #dc2626;
+  color: white;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-arrow:hover {
+  background-color: #b91c1c;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.nav-arrow-left {
+  left: 2rem;
+}
+
+.nav-arrow-right {
+  right: 2rem;
+}
+
+.arrow-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.indicator {
+  width: 3rem;
+  height: 0.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.indicator.active {
+  background-color: #dc2626;
+}
+
+.indicator.inactive {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.indicator.inactive:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 10;
+}
